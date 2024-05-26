@@ -3,7 +3,7 @@ dotenv.config({ path: '../../.env' });
 
 module.exports = {
   client: 'postgresql',
-  connection: `postgres://${process.env.DB_USER}:${process.env.DB_PWD}@${process.env.DB_HOST}/${process.env.DB_NAME}`,
+  connection: `postgres://${process.env.DB_USER}:${process.env.DB_PWD}@${process.env.DB_HOST}/${process.env.DB_NAME}?sslmode=require`,
   seeds: {
     directory: './seeds',
   },
