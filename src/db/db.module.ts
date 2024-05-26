@@ -18,7 +18,7 @@ const providers = [
     useFactory: async () => {
       const db = knex({
         client: 'pg',
-        connection: `postgres://${process.env.DB_USER}:${process.env.DB_PWD}@${process.env.DB_HOST}/${process.env.DB_NAME}`,
+        connection: `postgres://${process.env.DB_USER}:${process.env.DB_PWD}@${process.env.DB_HOST}/${process.env.DB_NAME}?sslmode=require`,
         debug: process.env.KNEX_DEBUG === 'true',
         ...knexSnakeCaseMappers(),
       });
