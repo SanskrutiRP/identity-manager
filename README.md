@@ -122,10 +122,6 @@ The application handles the scenarios by interacting with the `Contact` table in
       }
       ```
 
-### Sequence Diagram
-
-You can create sequence diagrams to illustrate the flow of data and interactions in the system using [SequenceDiagram.org](https://sequencediagram.org).
-
 ## Conclusion
 
 This README provides a comprehensive overview of the Bitespeed Customer Identity Service, including problem scenarios, tech stack, setup instructions, and solution details. For more information, refer to the Swagger documentation available at `http://localhost:3000/api`.
