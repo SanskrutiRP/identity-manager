@@ -111,13 +111,7 @@ The application handles the scenarios by interacting with the `Contact` table in
       ```
     - Response:
       ```json
-      {
-          "id": 1,
-          "email": "example@example.com",
-          "phoneNumber": "1234567890",
-          "linkPrecedence": "primary",
-          "linkedId": null
-      }
+      {"contact":{"primaryContactId":11,"emails":["xyz@gmail.com","abc@gmail.com"],"phoneNumbers":["8584312405","9584312405"],"secondaryContactIds":[12]}}
       ```
 
 ### Sequence Diagram
